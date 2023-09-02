@@ -2,16 +2,16 @@ let toggleBtn = document.getElementById('toggle-btn');
 let body = document.body;
 let darkMode = localStorage.getItem('dark-mode');
 
-const video1 = [{
-    video: "vid-1.mp4"
-}]
-var video = " ";
-for (let i in video1) {
-    video = ` 
-   <video src="${video1[i]["video"]}" controls poster="post-1-1.png" id="video"></video>
-   `;
-}
-document.getElementById("video1").innerHTML = video;
+// const video1 = [{
+//     video: "vid-1.mp4"
+// }]
+// var video = " ";
+// for (let i in video1) {
+//     video = ` 
+//    <video src="${video1[i]["video"]}" controls poster="post-1-1.png" id="video"></video>
+//    `;
+// }
+// document.getElementById("video1").innerHTML = video;
 const enableDarkMode = () => {
     toggleBtn.classList.replace('fa-sun', 'fa-moon');
     body.classList.add('dark');
